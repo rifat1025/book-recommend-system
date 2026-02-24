@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.log
+
+# Django
+*.db
+*.sqlite3
+media/
+staticfiles/
+.env
+*.pot
+
+# ML model files
+models/
+picklefile/
+*.pkl
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node / frontend (if using React/JS)
+node_modules/
+npm-debug.log
+yarn-error.log
