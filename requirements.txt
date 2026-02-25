@@ -1,0 +1,9 @@
+Django==5.2.11
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+pickle-mixin
+gunicorn
+whitenoise
