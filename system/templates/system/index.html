@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,16 +100,20 @@ header{
 </head>
 
 <body>
+    {% include 'system/header.html' %}
             <div class="container">
 
-            <header>
+            {% comment %} <header>
             <h1>Book Recommender System</h1>
-            </header>
+            </header> {% endcomment %}
 
+            <form method="POST" action="{% url 'recommend' %}">
+            {% csrf_token %}
             <div class="search-box">
-            <input type="text" placeholder="Search for books...">
-            <button>Search</button>
+            <input type="text" name="search" placeholder="Search for books...">
+            <button type="submit">Search</button>
             </div>
+        </form>
 
             <div class="recommendations">
             {% for book in books %}
@@ -125,7 +133,7 @@ header{
                 {% endfor %}
 
             </div>
-
+            {% include 'system/pagination.html' %}
             </div>
 </body>
 </html>

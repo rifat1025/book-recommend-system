@@ -96,19 +96,20 @@ header{
 </head>
 
 <body>
+    {% include 'system/header.html' %}
 <div class="container">
 
-<header>
+{% comment %} <header>
     <h1>Book Recommender System</h1>
-</header>
+</header> {% endcomment %}
 
-<div class="search-box">
+{% comment %} <div class="search-box">
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="search" placeholder="Search for books..." value="{{ request.POST.search }}">
         <button type="submit">Search</button>
     </form>
-</div>
+</div> {% endcomment %}
 
 <div class="recommendations">
     {% if data %}

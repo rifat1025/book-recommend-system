@@ -121,13 +121,46 @@ Download the picke files from **Google Drive** and place them inside the project
 
 ```
 
-book_recommender/
-│── books/
-│── templates/
-│── static/
-│── models/
-│── manage.py
-│── requirements.txt
+├── db.sqlite3
+├── manage.py
+├── picklefile
+│   └── popularity_df
+├── README.md
+├── recommend
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── settings.cpython-310.pyc
+│   │   ├── urls.cpython-310.pyc
+│   │   └── wsgi.cpython-310.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── requirements.txt
+└── system
+    ├── admin.py
+    ├── apps.py
+    ├── __init__.py
+    ├── migrations
+    │   ├── __init__.py
+    │   └── __pycache__
+    │       └── __init__.cpython-310.pyc
+    ├── models.py
+    ├── __pycache__
+    │   ├── admin.cpython-310.pyc
+    │   ├── apps.cpython-310.pyc
+    │   ├── __init__.cpython-310.pyc
+    │   ├── models.cpython-310.pyc
+    │   ├── urls.cpython-310.pyc
+    │   └── views.cpython-310.pyc
+    ├── templates
+    │   └── system
+    │       ├── index.html
+    │       └── reommend.html
+    ├── tests.py
+    ├── urls.py
+    └── views.py
 ```
 
 ---
